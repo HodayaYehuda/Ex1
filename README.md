@@ -52,11 +52,20 @@ He contain all the nodeInfo of the graph.
 Every inner hashMap represent the Neighbors of the key.
 The inner hashMap contain the nodeInfo, that I can get them by himself key.
 The inner hashMap contain the nodeInfo at the key -1 (see Cartoon description).
---AllNodes is a hashMap with an inner hashMap.
+
+
+
+<img width="447" alt="allNodes" src="https://user-images.githubusercontent.com/74351324/99884164-b7e39900-2c34-11eb-8c82-06a08dda4ce4.PNG">
+
+
+
+-edgeWeight is a hashMap with an inner hashMap.
 edgeWeight contain the Weight of the edges.
 every inner hashmap contain his node by key (-1).
 
 
+
+<img width="461" alt="edge" src="https://user-images.githubusercontent.com/74351324/99884175-d34ea400-2c34-11eb-9c22-41afa8941f09.PNG">
 
 
 
@@ -103,6 +112,10 @@ This allows you to know the distance of each vertex from the initial vertex.
 In the shortestPath function I used Dijkstra, exactly like shortestPathDist function.
 After it, I prepared a list by the parent hashmap.
 
+tests - 
+based on basic graph (see Cartoon description), graph with a milion vertax & 4 milion edges , and graph with a milion vertax & 10 milion edges.
+
+<img width="481" alt="graph" src="https://user-images.githubusercontent.com/74351324/99884247-64be1600-2c35-11eb-85b9-baa67891af44.PNG">
 
 
 
