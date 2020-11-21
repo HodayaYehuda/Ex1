@@ -1,6 +1,7 @@
-package ex1;
+package ex1.tests;
 
 
+import ex1.src.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
@@ -56,15 +57,15 @@ public class myWGraph_Algo_test {
         }
         for (int i = 0; i < 1000000/4; i++) {
             b.connect(i, i + 1, i);
-            // b.connect(i, i + 3, 2 * i);
-            //   b.connect(i, i + 7, i / 2);
-            //     b.connect(i, i + 9, i );
+             b.connect(i, i + 3, 2 * i);
+               b.connect(i, i + 7, i / 2);
+                 b.connect(i, i + 9, i );
         }
 
         long endTime = System.currentTimeMillis();
 
         long duration = (endTime - startTime);
-        System.out.println("time for build 10^6 vert && edges graph: " +duration/1000.0);
+       // System.out.println("time for build 10^6 vert && (10^6) * 4 edges graph: " +duration/1000.0);
 
         return b;
     }

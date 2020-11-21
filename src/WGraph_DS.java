@@ -1,4 +1,4 @@
-package ex1;
+package ex1.src;
 
 
 
@@ -106,7 +106,7 @@ public class WGraph_DS implements weighted_graph, Serializable {
      * copy constructor
      * @param g
      */
-    WGraph_DS(WGraph_DS g){
+    public WGraph_DS(WGraph_DS g){
         this.mc = g.getMC();
         this.edgeNum = g.edgeSize();
 
@@ -149,7 +149,7 @@ public class WGraph_DS implements weighted_graph, Serializable {
     /**
      * constructor
      */
-    WGraph_DS(){
+    public WGraph_DS(){
         this.AllNodes = new HashMap<Integer,HashMap<Integer, node_info>>();
         this.edgeWeight = new HashMap<Integer,HashMap<Integer, Double>>();
         this.myNodesCollection = new HashMap<Integer, node_info>();
